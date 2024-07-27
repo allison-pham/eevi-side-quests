@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Eevi: Side Quest
+- npm start - starts the development server
+- npm run build - bundles the app into static files for production
+- npm test - starts the test runner
+- npm run eject - removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can’t go back!
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
