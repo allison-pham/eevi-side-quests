@@ -1,0 +1,16 @@
+.side-quest-bar {
+  width: 250px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.side-quest-bar h2 {
+  text-align: center;
+}
+
+.side-quest-bar ul {
+  list-style-type: none;
+  padding: 0;
+}
