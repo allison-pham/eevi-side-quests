@@ -11,7 +11,7 @@
 }
 
 .concept-type-content {
-  width: 800px; /* Increase the width of the pop-up */
+  width: 800px;
   max-width: 90%;
   background: var(--white);
   color: var(--black);
@@ -44,7 +44,6 @@
   background: #9a6edc;
 }
 
-/* Add margin between the buttons */
 .concept-type-content .close-button {
   margin-right: 10px;
 }
