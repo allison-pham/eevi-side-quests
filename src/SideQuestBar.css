@@ -1,38 +1,37 @@
 .side-quest-bar {
-    width: 300px;
-    padding: 10px;
-    background-color: var(--black);
-    border: 1px solid var(--purple);
-    border-radius: 8px;
-    margin-left: 20px;
-    color: var(--white);
+	width: 300px;
+	padding: 10px;
+	background-color: var(--black);
+	border: 1px solid var(--purple);
+	border-radius: 8px;
+	margin-left: 20px;
+	color: var(--white);
   }
-  
+ 
   .side-quest-bar h2 {
-    text-align: center;
-    color: var(--purple);
+	text-align: center;
+	color: var(--purple);
   }
-  
+ 
   .side-quest-bar ul {
-    list-style-type: none;
-    padding: 0;
+	list-style-type: none;
+	padding: 0;
   }
-  
+ 
   /* .side-quest-bar .view-all {
-    text-align: center;
-    margin-top: 20px;
+	text-align: center;
+	margin-top: 20px;
   }
-  
+ 
   .side-quest-bar .view-all button {
-    background-color: var(--purple);
-    color: var(--white);
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+	background-color: var(--purple);
+	color: var(--white);
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
   }
-  
+ 
   .side-quest-bar .view-all button:hover {
-    background-color: #9a6edc;
+	background-color: #9a6edc;
   } */
-  

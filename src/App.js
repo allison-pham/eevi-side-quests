@@ -19,7 +19,7 @@ const quests = [
   },
   {
     title: "Environment",
-    description: "CONCEPT - Did you know...?",
+    description: "CONCEPT - Carbon Footprint",
     link: "https://leetcode.com/problemset/all/",
     completed: false,
   },
