@@ -11,6 +11,8 @@
 }
 
 .concept-type-content {
+  width: 800px; /* Increase the width of the pop-up */
+  max-width: 90%;
   background: var(--white);
   color: var(--black);
   padding: 20px;
@@ -23,7 +25,8 @@
 }
 
 .concept-type-content .learn-more-button,
-.concept-type-content .close-button {
+.concept-type-content .close-button,
+.concept-type-content .finish-button {
   margin-top: 20px;
   padding: 10px 20px;
   background: var(--purple);
@@ -36,6 +39,12 @@
 }
 
 .concept-type-content .learn-more-button:hover,
-.concept-type-content .close-button:hover {
+.concept-type-content .close-button:hover,
+.concept-type-content .finish-button:hover {
   background: #9a6edc;
+}
+
+/* Add margin between the buttons */
+.concept-type-content .close-button {
+  margin-right: 10px;
 }
