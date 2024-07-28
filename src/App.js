@@ -1,61 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import SideQuestBar from "./SideQuestBar";
+import ViewAllQuests from "./ViewAllQuests";
+import ConceptType from "./ConceptType"; // Import the new component
 import "./App.css";
 
 const quests = [
   {
-    title: "Data Structures & Algorithms (DSA)",
-    description: "CONCEPT - Arrays and Hashing",
+    title: "DSA",
+    description: "PROBLEM - Arrays",
+    link: "https://leetcode.com/problems/two-sum/description/",
     completed: false,
   },
   {
     title: "DSA + Environment",
     description: "PROJECT - Waste Management System with AI",
+    link: "https://leetcode.com/problemset/all/",
     completed: true,
   },
   {
     title: "Environment",
     description: "CONCEPT - Did you know...?",
+    link: "https://leetcode.com/problemset/all/",
     completed: false,
   },
 ];
 
 const App = () => {
+  const [showAllQuests, setShowAllQuests] = useState(false);
+  const [selectedConcept, setSelectedConcept] = useState(null); // State for selected concept
+
   return (
     <div className="app">
       <div className="main-content">
         <h1>Calendar</h1>
         <p>[Calendar here]</p>
       </div>
-      <SideQuestBar quests={quests} />
+      {showAllQuests ? (
+        <ViewAllQuests quests={quests} setShowAllQuests={setShowAllQuests} />
+      ) : (
+        <SideQuestBar
+          quests={quests}
+          setShowAllQuests={setShowAllQuests}
+          setSelectedConcept={setSelectedConcept}
+        />
+      )}
+      {selectedConcept && (
+        <ConceptType
+          concept={selectedConcept}
+          onClose={() => setSelectedConcept(null)}
+        />
+      )}
     </div>
   );
 };
 
 export default App;
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;

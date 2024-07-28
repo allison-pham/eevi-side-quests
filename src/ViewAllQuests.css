@@ -1,29 +1,27 @@
-.side-quest-bar {
-    width: 300px;
-    padding: 10px;
+/* .view-all-quests {
+    padding: 20px;
     background-color: var(--black);
-    border: 1px solid var(--purple);
-    border-radius: 8px;
-    margin-left: 20px;
     color: var(--white);
+    flex: 1;
   }
   
-  .side-quest-bar h2 {
+  .view-all-quests h2 {
     text-align: center;
     color: var(--purple);
   }
   
-  .side-quest-bar ul {
-    list-style-type: none;
-    padding: 0;
+  .quest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
   
-  /* .side-quest-bar .view-all {
+  .back-button {
     text-align: center;
     margin-top: 20px;
   }
   
-  .side-quest-bar .view-all button {
+  .back-button button {
     background-color: var(--purple);
     color: var(--white);
     border: none;
@@ -32,7 +30,7 @@
     cursor: pointer;
   }
   
-  .side-quest-bar .view-all button:hover {
+  .back-button button:hover {
     background-color: #9a6edc;
-  } */
-  
+  }
+   */
